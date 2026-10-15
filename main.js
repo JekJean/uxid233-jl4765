@@ -94,3 +94,7 @@ const zodiac_signs = [
         end_day: 21,
     },
 ];
+
+sign_sound();
+sign_img();
+sign_text();
