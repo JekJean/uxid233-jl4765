@@ -8,10 +8,12 @@ const zodiac_signs = [
 
         function sign_sound() {
             console.log('Use Sign Sound');
-        }
+        },
+        
         function sign_img() {
             console.log('Use Sign Image');
-        }
+        },
+
         function sign_text() {
             console.log('Use Sign Text');
         }
