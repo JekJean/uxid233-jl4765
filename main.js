@@ -97,6 +97,6 @@ const zodiac_signs = [
     },
 ];
 
-sign_sound();
-sign_img();
-sign_text();
+zodiac_signs[0].sign_sound();
+zodiac_signs[0].sign_img();
+zodiac_signs[0].sign_text();
