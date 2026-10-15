@@ -6,15 +6,15 @@ const zodiac_signs = [
         end_month: 1,
         end_day: 19,
 
-        function sign_sound() {
+        sign_sound() {
             console.log('Use Sign Sound');
         },
-        
-        function sign_img() {
+
+        sign_img() {
             console.log('Use Sign Image');
         },
 
-        function sign_text() {
+        sign_text() {
             console.log('Use Sign Text');
         }
     },
