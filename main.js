@@ -5,6 +5,16 @@ const zodiac_signs = [
         start_day: 22,
         end_month: 1,
         end_day: 19,
+
+        function sign_sound() {
+            console.log('Use Sign Sound');
+        }
+        function sign_img() {
+            console.log('Use Sign Image')
+        }
+        function sign_text() {
+            console.log('Use Sign Text')
+        }
     },
     {
         name: 'Aquarius',
