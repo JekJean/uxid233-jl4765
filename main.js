@@ -10,10 +10,10 @@ const zodiac_signs = [
             console.log('Use Sign Sound');
         }
         function sign_img() {
-            console.log('Use Sign Image')
+            console.log('Use Sign Image');
         }
         function sign_text() {
-            console.log('Use Sign Text')
+            console.log('Use Sign Text');
         }
     },
     {
