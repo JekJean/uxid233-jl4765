@@ -146,4 +146,4 @@ function play_text(sign) {
     console.log(sign.text);
 }
 
-sign_sound(zodiac_signs[0]);
+play_sound(zodiac_signs[0]);
