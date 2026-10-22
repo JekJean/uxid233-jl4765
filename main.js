@@ -161,5 +161,7 @@ function play_text(sign) {
 play_sound(zodiac_signs[0]);
 
 function all_signs {
-    for (const)
+    for (const Birthdate of zodiac_signs) {
+        console.log(`${Birthdate.name}`)
+    }
 }
