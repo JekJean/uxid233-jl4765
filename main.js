@@ -5,6 +5,10 @@ const zodiac_signs = [
         start_day: 22,
         end_month: 1,
         end_day: 19,
+
+        sound: 'Capricorn Sound',
+        image: 'Capricorn Image',
+        text: 'Capricorn Text'
     },
     {
         name: 'Aquarius',
@@ -12,6 +16,10 @@ const zodiac_signs = [
         start_day: 20,
         end_month: 2,
         end_day: 18,
+
+        sound: 'Aquarius Sound',
+        image: 'Aquarius Image',
+        text: 'Aquarius Text'
     },
     {
         name: 'Pisces',
@@ -19,6 +27,10 @@ const zodiac_signs = [
         start_day: 19,
         end_month: 3,
         end_day: 20,
+
+        sound: 'Pisces Sound',
+        image: 'Pisces Image',
+        text: 'Pisces Text'
     },
     {
         name: 'Aries',
@@ -26,6 +38,10 @@ const zodiac_signs = [
         start_day: 21,
         end_month: 4,
         end_day: 19,
+
+        sound: 'Aries Sound',
+        image: 'Aries Image',
+        text: 'Aries Text'
     },
     {
         name: 'Taurus',
@@ -33,6 +49,10 @@ const zodiac_signs = [
         start_day: 20,
         end_month: 5,
         end_day: 20,
+
+        sound: 'Taurus Sound',
+        image: 'Taurus Image',
+        text: 'Taurus Text'
     },
     {
         name: 'Gemini',
@@ -40,6 +60,10 @@ const zodiac_signs = [
         start_day: 21,
         end_month: 6,
         end_day: 20,
+
+        sound: 'Gemini Sound',
+        image: 'Gemini Image',
+        text: 'Gemini Text'
     },
     {
         name: 'Cancer',
@@ -47,6 +71,10 @@ const zodiac_signs = [
         start_day: 21,
         end_month: 7,
         end_day: 22,
+
+        sound: 'Gemini Sound',
+        image: 'Gemini Image',
+        text: 'Gemini Text'
     },
     {
         name: 'Leo',
@@ -54,6 +82,10 @@ const zodiac_signs = [
         start_day: 23,
         end_month: 8,
         end_day: 22,
+
+        sound: 'Leo Sound',
+        image: 'Leo Image',
+        text: 'Leo Text'
     },
     {
         name: 'Virgo',
@@ -61,6 +93,10 @@ const zodiac_signs = [
         start_day: 23,
         end_month: 9,
         end_day: 22,
+
+        sound: 'Virgo Sound',
+        image: 'Virgo Image',
+        text: 'Virgo Text'
     },
     {
         name: 'Libra',
@@ -68,6 +104,10 @@ const zodiac_signs = [
         start_day: 23,
         end_month: 10,
         end_day: 22,
+
+        sound: 'Libra Sound',
+        image: 'Libra Image',
+        text: 'Libra Text'
     },
     {
         name: 'Scorpio',
@@ -75,6 +115,10 @@ const zodiac_signs = [
         start_day: 23,
         end_month: 11,
         end_day: 21,
+
+        sound: 'Scorpio Sound',
+        image: 'Scorpio Image',
+        text: 'Scorpio Text'
     },
     {
         name: 'Sagittarius',
@@ -82,18 +126,23 @@ const zodiac_signs = [
         start_day: 22,
         end_month: 12,
         end_day: 21,
+
+        sound: 'Sagittarius Sound',
+        image: 'Sagittarius Image',
+        text: 'Sagittarius Text'
     },
+    
 ];
 
-function sign_sound(sign) {
+function play_sound(sign) {
     console.log(sign.sound);
 }
 
-function sign_img(sign) {
+function play_img(sign) {
     console.log(sign.image);
 }
 
-function sign_text(sign) {
+function play_text(sign) {
     console.log(sign.text);
 }
 
