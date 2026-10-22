@@ -134,6 +134,18 @@ const zodiac_signs = [
     
 ];
 
+function get_birthday(month, day) {
+    for (const user_birthday of zodiac_signs) {
+        const user_start_month = month === zodiac_signs.start_month && day >= zodiac_signs.start_day
+        const user_end_month = month === zodiac_signs.end_month && day <= zodiac_signs.end_day
+
+        if (user_start_month || user_end_month) {
+            return zodiac_signs
+        }
+    }
+}
+
+
 function play_sound(sign) {
     console.log(sign.sound);
 }
