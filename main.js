@@ -85,3 +85,16 @@ const zodiac_signs = [
     },
 ];
 
+function sign_sound(sign) {
+    console.log(sign.sound);
+}
+
+function sign_img(sign) {
+    console.log(sign.image);
+}
+
+function sign_text(sign) {
+    console.log(sign.text);
+}
+
+sign_sound(zodiac_signs[0]);
