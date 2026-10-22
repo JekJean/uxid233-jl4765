@@ -159,3 +159,4 @@ function play_text(sign) {
 }
 
 play_sound(zodiac_signs[0]);
+
