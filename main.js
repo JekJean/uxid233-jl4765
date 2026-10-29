@@ -140,7 +140,7 @@ function get_birthday(month, day) {
         const user_end_month = month === Birthdate.end_month && day <= Birthdate.end_day
 
         if (user_start_month || user_end_month) {
-            return Birthdate
+            return Birthdate.name
         }
     }
 }
@@ -165,4 +165,5 @@ function all_signs() {
         console.log(`${Birthdate.name}`)
     }
 }
-console.log(all_signs);
+console.log(get_birthday(12,12));
+all_signs()
