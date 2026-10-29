@@ -162,7 +162,7 @@ play_sound(zodiac_signs[0]);
 
 function all_signs() {
     for (const Birthdate of zodiac_signs) {
-        console.log(`${Birthdate.name}`)
+        console.log(`Your birthdate is${Birthdate.name}`)
     }
 }
 console.log(get_birthday(12,12));
