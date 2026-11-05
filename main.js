@@ -133,6 +133,8 @@ const zodiac_signs = [
     },
     
 ];
+const dob_output = document.querySelector("#dob")
+const art_display = document.querySelector("#art_display")
 
 function get_birthday(month, day) {
     for (const Birthdate of zodiac_signs) {
@@ -144,7 +146,6 @@ function get_birthday(month, day) {
         }
     }
 }
-
 
 function play_sound(sign) {
     console.log(sign.sound);
@@ -162,8 +163,10 @@ play_sound(zodiac_signs[0]);
 
 function all_signs() {
     for (const Birthdate of zodiac_signs) {
-        console.log(`Your birthdate is${Birthdate.name}`)
+        console.log(`Your birthdate is ${Birthdate.name}`)
+        const li = document.createElement('li');
+        li.textContent = `${Birthdate.name}`;
+        art_display.appendChild(li);
     }
 }
-console.log(get_birthday(12,12));
 all_signs()
