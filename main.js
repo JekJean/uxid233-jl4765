@@ -137,14 +137,17 @@ const zodiac_signs = [
 /* HTML --> JS */
 const month_input = document.querySelector("#month");
 const day_input = document.querySelector("#day");
-const submit_form = document.querySelector("#submit_form")
+const submit_form = document.querySelector("#submit_form");
 const art_display = document.querySelector("#art_display");
 
-/* Turn month_input & day_input into value */
+/* Turn month_input & day_input into value (event handler) */
 function user_birthday(event) {
+    event.preventDefault();
     const month = month_input.value;
     const day = day_input.value;
 }
+
+submit_form.addEventListener('submit',user_birthday);
 
 /* Loop to match input date agaisnt start_month & start_day... */
 function compare_birthday(month, day) {
