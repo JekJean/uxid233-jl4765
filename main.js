@@ -149,6 +149,10 @@ function user_birthday(event) {
     const painting = compare_birthday(month, day);
 
     console.log(painting);
+
+    const result = document.createElement('h1');
+    result.textContent = painting;
+    art_display.appendChild(result);
 }
 
 /* Listens for submit button to be pressed (event listener) */
@@ -166,21 +170,17 @@ function compare_birthday(month, day) {
     }
 }
 
-
+/* Painting Interaction Function */
 function play_sound(sign) {
     console.log(sign.sound);
 }
-
 function play_img(sign) {
     console.log(sign.image);
 }
-
 function play_text(sign) {
     console.log(sign.text);
 }
-
-play_sound(zodiac_signs[0]);
-
+/* 
 function all_signs() {
     for (const Birthdate of zodiac_signs) {
         console.log(`Your birthdate is ${Birthdate.name}`)
@@ -189,4 +189,4 @@ function all_signs() {
         art_display.appendChild(li);
     }
 }
-all_signs()
+all_signs() */
