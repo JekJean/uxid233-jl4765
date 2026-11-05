@@ -143,10 +143,12 @@ const art_display = document.querySelector("#art_display");
 /* Turn month_input & day_input into value (event handler) */
 function user_birthday(event) {
     event.preventDefault();
-    const month = month_input.value;
-    const day = day_input.value;
+    const month = Number(month_input.value);
+    const day = Number(day_input.value);
+    console.log(month, day);
 }
 
+/* Listens for submit button to be pressed (event listener) */
 submit_form.addEventListener('submit',user_birthday);
 
 /* Loop to match input date agaisnt start_month & start_day... */
