@@ -133,10 +133,21 @@ const zodiac_signs = [
     },
     
 ];
-const dob_output = document.querySelector("#dob")
-const art_display = document.querySelector("#art_display")
 
-function get_birthday(month, day) {
+/* HTML --> JS */
+const month_input = document.querySelector("#month");
+const day_input = document.querySelector("#day");
+const submit_form = document.querySelector("#submit_form")
+const art_display = document.querySelector("#art_display");
+
+/* Turn month_input & day_input into value */
+function user_birthday(event) {
+    const month = month_input.value;
+    const day = day_input.value;
+}
+
+/* Loop to match input date agaisnt start_month & start_day... */
+function compare_birthday(month, day) {
     for (const Birthdate of zodiac_signs) {
         const user_start_month = month === Birthdate.start_month && day >= Birthdate.start_day
         const user_end_month = month === Birthdate.end_month && day <= Birthdate.end_day
@@ -146,6 +157,7 @@ function get_birthday(month, day) {
         }
     }
 }
+
 
 function play_sound(sign) {
     console.log(sign.sound);
