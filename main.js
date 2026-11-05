@@ -145,7 +145,10 @@ function user_birthday(event) {
     event.preventDefault();
     const month = Number(month_input.value);
     const day = Number(day_input.value);
-    console.log(month, day);
+
+    const painting = compare_birthday(month, day);
+
+    console.log(painting);
 }
 
 /* Listens for submit button to be pressed (event listener) */
