@@ -12,7 +12,28 @@ const libra_sound = new Audio('sound/zodiac-sound-10.mp3');
 const scorpio_sound = new Audio('sound/zodiac-sound-11.mp3');
 const sagittarius_sound = new Audio('sound/zodiac-sound-12.mp3');
 
-function stop_sounds()
+const all_sounds = [
+    capricorn_sound,
+    aquarius_sound,
+    pisces_sound,
+    aries_sound,
+    taurus_sound,
+    gemini_sound,
+    cancer_sound,
+    leo_sound,
+    virgo_sound,
+    libra_sound,
+    scorpio_sound,
+    sagittarius_sound,
+]
+
+/* Stop Sounds Function */
+function stop_sounds() {
+    for (const sound of all_sounds) {
+        sound.pause();
+        sound.currentTime = 0;
+    }
+}
 
 const zodiac_signs = [
     {
@@ -168,6 +189,7 @@ function user_birthday(event) {
     const result = document.createElement('h1');
     result.textContent = painting.name;
     art_display.appendChild(result);
+    stop_sounds();
     painting.sound.play();
 }
 
@@ -185,6 +207,7 @@ function compare_birthday(month, day) {
         }
     }
 }
+
 
 /* Painting Interaction Function */
 function play_sound(sign) {
