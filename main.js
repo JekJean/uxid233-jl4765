@@ -208,6 +208,17 @@ function compare_birthday(month, day) {
     }
 }
 
+for (const sign of zodiac_signs) {
+    const #button = document.createElement('button');
+    button.textContent = sign.name;
+
+    button.addEventListener('click', function() {
+        stop_sounds();
+        sign.sound.play();
+    });
+
+    art_display.appendChild(button);
+}
 
 /* Painting Interaction Function */
 function play_sound(sign) {
