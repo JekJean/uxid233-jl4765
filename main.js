@@ -61,7 +61,7 @@ const zodiac_signs = [
         end_month: 6,
         end_day: 20,
 
-        sound: 'Gemini Sound',
+        sound: 'sound/zodiac-sound-6.mp3',
         image: 'Gemini Image',
         text: 'Gemini Text'
     },
@@ -72,7 +72,7 @@ const zodiac_signs = [
         end_month: 7,
         end_day: 22,
 
-        sound: 'Gemini Sound',
+        sound: 'sound/zodiac-sound-7.mp3',
         image: 'Gemini Image',
         text: 'Gemini Text'
     },
@@ -83,7 +83,7 @@ const zodiac_signs = [
         end_month: 8,
         end_day: 22,
 
-        sound: 'Leo Sound',
+        sound: 'sound/zodiac-sound-8.mp3',
         image: 'Leo Image',
         text: 'Leo Text'
     },
@@ -94,7 +94,7 @@ const zodiac_signs = [
         end_month: 9,
         end_day: 22,
 
-        sound: 'Virgo Sound',
+        sound: 'sound/zodiac-sound-9.mp3',
         image: 'Virgo Image',
         text: 'Virgo Text'
     },
@@ -105,7 +105,7 @@ const zodiac_signs = [
         end_month: 10,
         end_day: 22,
 
-        sound: 'Libra Sound',
+        sound: 'sound/zodiac-sound-10.mp3',
         image: 'Libra Image',
         text: 'Libra Text'
     },
@@ -116,7 +116,7 @@ const zodiac_signs = [
         end_month: 11,
         end_day: 21,
 
-        sound: 'Scorpio Sound',
+        sound: 'sound/zodiac-sound-11.mp3',
         image: 'Scorpio Image',
         text: 'Scorpio Text'
     },
@@ -127,7 +127,7 @@ const zodiac_signs = [
         end_month: 12,
         end_day: 21,
 
-        sound: 'Sagittarius Sound',
+        sound: 'sound/zodiac-sound-12.mp3',
         image: 'Sagittarius Image',
         text: 'Sagittarius Text'
     },
@@ -140,7 +140,19 @@ const day_input = document.querySelector("#day");
 const submit_form = document.querySelector("#submit_form");
 const art_display = document.querySelector("#art_display");
 
+/* Sign Audio Objs */
 const capricorn_sound = new Audio('sound/zodiac-sound-1.mp3');
+const aquarius_sound = new Audio('sound/zodiac-sound-2.mp3');
+const pisces_sound = new Audio('sound/zodiac-sound-3.mp3');
+const aries_sound = new Audio('sound/zodiac-sound-4.mp3');
+const taurus_sound = new Audio('sound/zodiac-sound-5.mp3');
+const gemini_sound = new Audio('sound/zodiac-sound-6.mp3');
+const cancer_sound = new Audio('sound/zodiac-sound-7.mp3');
+const leo_sound = new Audio('sound/zodiac-sound-8.mp3');
+const virgo_sound = new Audio('sound/zodiac-sound-9.mp3');
+const libra_sound = new Audio('sound/zodiac-sound-10.mp3');
+const scorpio_sound = new Audio('sound/zodiac-sound-11.mp3');
+const sagittarius_sound = new Audio('sound/zodiac-sound-12.mp3');
 
 /* Turn month_input & day_input into value (event handler) */
 function user_birthday(event) {
@@ -152,7 +164,7 @@ function user_birthday(event) {
     console.log(painting);
 
     const result = document.createElement('h1');
-    result.textContent = painting;
+    result.textContent = painting.name;
     art_display.appendChild(result);
     capricorn_sound.play();
 }
@@ -167,7 +179,7 @@ function compare_birthday(month, day) {
         const user_end_month = month === Birthdate.end_month && day <= Birthdate.end_day
 
         if (user_start_month || user_end_month) {
-            return Birthdate.name
+            return Birthdate
         }
     }
 }
