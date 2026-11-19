@@ -6,7 +6,7 @@ const zodiac_signs = [
         end_month: 1,
         end_day: 19,
 
-        sound: 'Capricorn Sound',
+        sound: 'sound/zodiac-sound-1.mp3',
         image: 'Capricorn Image',
         text: 'Capricorn Text'
     },
@@ -17,7 +17,7 @@ const zodiac_signs = [
         end_month: 2,
         end_day: 18,
 
-        sound: 'Aquarius Sound',
+        sound: 'zodiac-sound-2.mp3',
         image: 'Aquarius Image',
         text: 'Aquarius Text'
     },
@@ -140,6 +140,8 @@ const day_input = document.querySelector("#day");
 const submit_form = document.querySelector("#submit_form");
 const art_display = document.querySelector("#art_display");
 
+const capricorn_sound = new Audio('sound/zodiac-sound-1.mp3');
+
 /* Turn month_input & day_input into value (event handler) */
 function user_birthday(event) {
     event.preventDefault();
@@ -152,6 +154,7 @@ function user_birthday(event) {
     const result = document.createElement('h1');
     result.textContent = painting;
     art_display.appendChild(result);
+    capricorn_sound.play();
 }
 
 /* Listens for submit button to be pressed (event listener) */
