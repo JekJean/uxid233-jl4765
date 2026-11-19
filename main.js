@@ -17,7 +17,7 @@ const zodiac_signs = [
         end_month: 2,
         end_day: 18,
 
-        sound: 'zodiac-sound-2.mp3',
+        sound: 'sound/zodiac-sound-2.mp3',
         image: 'Aquarius Image',
         text: 'Aquarius Text'
     },
@@ -28,7 +28,7 @@ const zodiac_signs = [
         end_month: 3,
         end_day: 20,
 
-        sound: 'Pisces Sound',
+        sound: 'sound/zodiac-sound-3.mp3',
         image: 'Pisces Image',
         text: 'Pisces Text'
     },
@@ -39,7 +39,7 @@ const zodiac_signs = [
         end_month: 4,
         end_day: 19,
 
-        sound: 'Aries Sound',
+        sound: 'sound/zodiac-sound-4.mp3',
         image: 'Aries Image',
         text: 'Aries Text'
     },
@@ -50,7 +50,7 @@ const zodiac_signs = [
         end_month: 5,
         end_day: 20,
 
-        sound: 'Taurus Sound',
+        sound: 'sound/zodiac-sound-5.mp3',
         image: 'Taurus Image',
         text: 'Taurus Text'
     },
